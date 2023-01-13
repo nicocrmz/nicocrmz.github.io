@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Coda&display=swap');
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Assistant', sans-serif;
+  overflow-x: hidden;
+}
+@media (max-width: 75em)
+{
+  html
+  {
+    font-size: 100%;
+  }
+}
+@media (max-width: 28.75em)
+{
+  html
+  {
+    font-size: 55%;
+  }
+}
+@media (max-width: 61.25em)
+{
+  html
+  {
+    font-size: 58%;
+  }
+}
+/** colores */
+:root
+{
+  --color1: rgb(0, 89, 255);
+  --color2: rgb(11, 20, 117);
+  --color3: rgb(45, 45, 45);
+  --color4: rgb(115, 13, 13);
+}
+/** menu */
+#menu
+{
+  width: 300px;
+  z-index:10 ;
+}
+.icono-menu
+{
+  margin: 40px 50px;
+  z-index: 10;
+  color: white;
+  position:fixed;
+  top:-27px;
+  z-index:11;
+}
+.icono-menu i
+{
+  vertical-align:top;
+  width: 40px;
+  cursor: pointer;
+}
+.cont-menu
+{
+  background-color: black;
+  width: 400px;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  transition: all .5s ease;
+}
+.cont-menu ul
+{
+  padding: 100px 0px 20px 0px;
+  list-style:none;
+}
+.cont-menu ul li
+{
+  color: white;
+  display:block;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+.cont-menu ul li:hover
+{
+  background-color: white;
+  color:black;
+}
+.active
+{
+  transform: translate(-600px);
+}
+
+ .list a
+{
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+a
+{
+  text-decoration: none;
+  font-size:1.4rem;
+}
+a:visited
+{
+  text-decoration: none;
+  color:inherit;
+}
+/** seccion de inicio */
+#welcome-section
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-decoration: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.rocklandwebdesign.com/userfiles/images/galleries/12/large/istock517017632_6303.jpg");
+}
+@media (min-width:2110px)
+{
+  #welcome-section
+  {
+    height: 50vh;
+  }
+}
+body
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: var(--color3);
+}
+html
+{
+  scroll-behavior: smooth;
+}
+ul > li
+{
+  display: inline-block;
+}
+h1
+{
+  color: white;
+}
+h2
+{
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+p
+{
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+/** seccion de informacion */
+#info
+{
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--color3);
+}
+.titulo-info
+{
+  border-bottom: 3px solid white;
+  color: white;
+  font-size: 3.5rem;
+}
+/** seccion de experiencia */
+#exp
+{
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--color1);
+}
+.titulo-exp
+{
+  border-bottom: 3px solid white;
+  color: white;
+  font-size: 3.5rem;
+}
+.titulo-exp2
+{
+  color: white;
+  font-size: 3.5rem;
+}
+.imagen-proyecto
+{
+  width:100%;
+  margin-bottom: 10px;
+  border-radius: 0 0 10px 10px;
+}
+.code
+{
+  color: black;
+  transition: color 0.3s ease-out;
+}
+.proyecto:hover .code
+{
+  color: var(--color1);
+}
+.titulo-proyecto
+{
+  color: white;
+  padding:5px;
+  margin:0px;
+  background-color: black;
+  text-align:center;
+  border-radius: 10px 10px 0 0;
+}
+.proyects
+{
+  display:grid;
+}
+.boton
+{
+  width: 100%;
+  background-color: black;
+  color:whitesmoke;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btnlink
+{
+  font-size:1.5rem;
+}
+.btnlink:hover
+{
+  font-size:2rem;
+  transition: .5s ease-in-out;
+}
+.btncontainer
+{
+  width:15%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color:black;
+  border-radius:10px;
+}
+/** seccion de habilidades */
+#skills
+{
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #1f1f1f;
+}
+.titulo-skills
+{
+  border-bottom: 3px solid white;
+  color: white;
+  font-size: 3.5rem;
+}
+.container
+{
+  width: 100%; 
+  background-color: white;
+  border-radius: 8px;
+}
+.skills
+{
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+.leng
+{
+  margin:0;
+  color: white;
+}
+.html
+{
+  width: 90%; background-color: green;
+  border-radius: 8px;
+} 
+.css
+{
+  width: 80%; background-color: blue;
+  border-radius: 8px;
+} 
+.js
+{
+  width: 65%; background-color: red;
+  border-radius: 8px;
+} 
+.cpp
+{
+  width: 60%; background-color: gray;
+  border-radius: 8px;
+}
+/** seccion de contacto */
+#contact
+{
+  background-color: var(--color1);
+  color:white;
+}
+footer
+{
+  background-color: var(--color3);
+}
+.contact
+{
+  margin:0;
+  padding-bottom: 20px;
+  color:white;
+}
+.contact-title
+{
+  color: white;
+  margin:0;
+  font-size: 2em;
+}
+.contact-details
+{
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  padding: 1rem 2rem;
+  display:inline-block;
+  color:white;
+}
+.btn
+{
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  color:white;
+}
+.contact-links
+{
+  text-align:center;
+}
+.formulario
+{
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 30px;
+  width:50%;
+}
+input[type=text], select, textarea
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 8px;
+}
+input[type=submit]
+{
+  background-color: white;
+  color: black;;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin:auto;
+}
+input[type=submit]:hover
+{
+  background-color: black;
+  color:white;
+  transition: all .6s ease-in-out;
+}
+.column
+{
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px)
+{
+  .column, input[type=submit]
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
